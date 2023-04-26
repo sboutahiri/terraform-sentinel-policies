@@ -16,25 +16,25 @@ module "gcp-functions" {
 
 policy "enforce-mandatory-labels" {
     source = "./enforce-mandatory-labels.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-egress-firewall-destination-ranges" {
     source = "./restrict-egress-firewall-destination-ranges.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-gce-machine-type" {
     source = "./restrict-gce-machine-type.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-gke-clusters" {
     source = "./restrict-gke-clusters.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ingress-firewall-source-ranges" {
     source = "./restrict-ingress-firewall-source-ranges.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
